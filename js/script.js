@@ -19,7 +19,13 @@ form.addEventListener("submit", function (event) {
   completeButton.addEventListener("click", function () {
     spanText.classList.toggle("todo-completed");
   });
+  const deleteButton = document.createElement("button");
+  deleteButton.textContent = "Eliminar";
+  deleteButton.addEventListener("click", function () {
+    list.removeChild(li);
+  });
   actions.appendChild(completeButton);
+  actions.appendChild(deleteButton);
   li.appendChild(spanText);
   li.appendChild(actions);
   list.appendChild(li);
