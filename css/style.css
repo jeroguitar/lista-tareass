@@ -41,3 +41,23 @@ h1 {
 padding: 8px; 
 border-bottom: 1px solid #ddd; 
 }
+
+todo-list li { 
+display: flex; 
+justify-content: space-between; 
+align-items: center; 
+padding: 8px; 
+border-bottom: 1px solid #ddd; 
+} 
+.todo-text { 
+flex: 1; 
+} 
+.todo-completed { 
+text-decoration: line-through; 
+color: #888; 
+} 
+.todo-actions button { 
+margin-left: 4px; 
+padding: 4px 8px; 
+font-size: 12px; 
+} 
